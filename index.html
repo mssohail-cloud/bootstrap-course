@@ -10,10 +10,41 @@
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#Navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand mr-auto" href="#">Food.com</a>
+
+        <div class="collapse navbar-collapse" id="Navbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#"><span class="fa fa-home fa-lg"></span> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <header class="rounded-lg hero">
       <div class="container">
         <div class="row row-header">
@@ -25,9 +56,7 @@
               your culinary senses!
             </p>
           </div>
-          <div class="col-12 col-sm-6">
-
-          </div>
+          <div class="col-12 col-sm-6"></div>
         </div>
       </div>
     </header>
@@ -87,7 +116,7 @@
             <h5>Links</h5>
             <ul class="list-unstyled">
               <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
+              <li><a href="./aboutus.html">About</a></li>
               <li><a href="#">Menu</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
@@ -98,24 +127,23 @@
               123, mainstreet<br />
               Near main bazzar<br />
               Pakistan<br />
-              Tel.: +92 1234 5678<br />
-              Fax: +92 8765 4321<br />
-              Email: <a href="mailto:food@food.com">food@food.com</a>
+              <i class="fa fa-phone fa-lg"></i> : +92 1234 5678<br />
+              <i class="fa fa-fax fa-lg"></i> : +92 8765 4321<br />
+              <i class="fa fa-envelope fa-lg"></i> : <a href="mailto:food@food.com">food@food.com</a>
             </address>
           </div>
-          
-            <div class="col-12 col-sm-4 align-self-center">
-              <div class="text-center">
 
-                <a href="http://google.com/+">Google+</a>
-                <a href="http://www.facebook.com/">Facebook</a>
-                <a href="http://www.twitter.com/in/">Twitter</a>
-                <a href="http://Instagram.com/">Instagram</a>
-                <a href="mailto:">Mail</a>
-              </div>
+          <div class="col-12 col-sm-4 align-self-center">
+            <div class="text-center">
+              <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+              <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/"><i class="fa fa-facebook fa-lg"></i></a>
+              <a class="btn btn-social-icon btn-twitter" href="http://www.twitter.com/in/"><i class="fa fa-twitter fa-lg"></i></a>
+              <a class="btn btn-social-icon btn-instagram" href="http://Instagram.com/"><i class="fa fa-instagram fa-lg"></i></a>
+              <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
             </div>
           </div>
-        
+        </div>
+
         <div class="row justify-content-center">
           <div class="col-auto">
             <p>&copy; Copyright 2023 Food.com</p>
