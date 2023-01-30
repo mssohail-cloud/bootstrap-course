@@ -116,7 +116,17 @@
         </div>
 
         <div class="col-12 col-sm-11 offset-sm-1">
-          <h5>Buttons goes here....</h5>
+          <div class="btn-group" role="group">
+            <a role="button" class="btn btn-primary" href="tel:+9212345678"
+              ><i class="fa fa-phone"></i> Call</a
+            >
+            <a role="button" class="btn btn-info" href="skype:food123?call"
+              ><i class="fa fa-skype"> Skype</i></a
+            >
+            <a role="button" class="btn btn-success" href="mailto:food@food.com"
+              ><i class="fa fa-envelope-o"> Email</i></a
+            >
+          </div>
         </div>
       </div>
 
@@ -124,7 +134,114 @@
         <div class="col-12">
           <h3>Send your Feedback</h3>
         </div>
-        <div class="col-12 col-md-9">Will add form here....</div>
+        <div class="col-12 col-md-9">
+          <form>
+            <div class="form-group mb-2 row">
+              <label for="firstname" class="col-md-2 col-form-label"
+                >First Name</label
+              >
+              <div class="col-md-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstname"
+                  name="firstname"
+                  placeholder="First Name"
+                />
+              </div>
+            </div>
+            <div class="form-group mb-2 row">
+              <label for="lastname" class="col-md-2 col-form-label"
+                >Last Name</label
+              >
+              <div class="col-md-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastname"
+                  name="lastname"
+                  placeholder="Last Name"
+                />
+              </div>
+            </div>
+
+            <div class="form-group mb-2 row">
+              <label for="telnum" class="col-md-2 col-form-label"
+                >Tel Number</label
+              >
+              <div class="col-5 col-md-3">
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="areacode"
+                  name="areacode"
+                  placeholder="Area Code"
+                />
+              </div>
+              <div class="col-7 col-md-7">
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="telnum"
+                  name="telnum"
+                  placeholder="Tel Number"
+                />
+              </div>
+            </div>
+            <div class="form-group mb-2 row">
+              <label for="email" class="col-md-2 col-form-label">Email</label>
+              <div class="col-md-10">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+            </div>
+            <div class="form-group mb-2 row">
+              <div class="col-md-6 offset-md-2">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  name="approve"
+                  id="approve"
+                  value=""
+                />
+                <label class="form-check-label" for="approve"
+                  >Can we contact you?</label
+                >
+              </div>
+              <div class="col-md-3 offset-md-1">
+                <select class="form-control">
+                  <option>Tel.</option>
+                  <option>Email</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group mb-2 row">
+              <label for="feedback" class="col-md-2 col-form-label"
+                >Your Feedback</label
+              >
+              <div class="col-md-10">
+                <textarea
+                  class="form-control"
+                  id="feedback"
+                  name="feedback"
+                  rows="12"
+                ></textarea>
+              </div>
+            </div>
+            <div class="form-group mb-2 row">
+              <div class="offset-md-2 col-md-10">
+                <button type="submit" class="btn btn-primary">
+                  Send Feedback
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
         <div class="col-12 col-md"></div>
       </div>
     </div>
